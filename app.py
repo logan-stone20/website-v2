@@ -14,5 +14,5 @@ def projects():
 def resume():
 	return render_template("cv.html", title = "CV")
 
-
-app.run()
+if __name__ == "main":
+	app.run()
