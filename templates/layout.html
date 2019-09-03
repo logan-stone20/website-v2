@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>{{ title }} - Logan Stone</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="180x180" href="../static/img/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../static/img/android-icon-192x192.png">
+        <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+        <link rel="stylesheet" href="../static/fonts/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+        <link rel="stylesheet" href="../static/css/Projects-Horizontal.css">
+        <link rel="stylesheet" href="../static/css/untitled.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+            <div class="container"><a class="navbar-brand text-dark logo" href="/">Logan Stone</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link text-dark active" href="/">Home</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active text-dark" href="/projects">Projects</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="/resume">CV</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active text-dark" href="mailto:logan.stone20@gmail.com">Contact Me</a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+        {% block content %}
+        {% endblock %}
+        <footer class="page-footer">
+            <div class="container">
+                <div class="links"><a href="/" style="filter: blur(0px) brightness(0%);margin: 0px 10px;">About me</a><a href="mailto:logan.stone20@gmail.com">Contact me</a><a href="/projects">Projects</a></div>
+                <div class="social-icons">
+                    <a class="shadow-sm" data-bs-hover-animate="rubberBand" href="https://github.com/logan-stone20" target="_blank" style="background-color: #000000;">
+                        <i class="icon ion-social-github"></i>
+                    </a>
+                    <a data-bs-hover-animate="rubberBand" href="https://www.linkedin.com/in/logan-stone-269339183/"
+                            target="_blank" style="background-color: #0077B5;">
+                        <i class="icon ion-social-linkedin"></i></a>
+                    </div>
+                </div>
+                </footer>
+            <script src="../static/js/jquery.min.js"></script>
+            <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+            <script src="../static/js/bs-animation.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+            <script src="../static/js/theme.js"></script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+    {% block content %}
+    <main class="page hire-me-page">
+        <section data-aos="fade-up" class="portfolio-block hire-me">
+            <div class="container">
+                {% if response %}
+                    {{ response }}
+                {% else %}
+                    <div class="heading">
+                        <h2>Send me an email</h2>
+                    </div>
+                    <form action="{{ url_for('contact') }}" method=post>
+                            <div class="form-group form-control">
+                                {{ form.email.label }}
+                                {{ form.email }}
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.message.label }}
+                                {{ form.message }}
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.submit }}      
+                            </div>              
+                    </form>
+                {% endif %}
+            </div>
+        </section>
+    </main>
+    {% endblock %}
