@@ -16,27 +16,35 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
         <link rel="stylesheet" href="../static/css/Projects-Horizontal.css">
-        <link rel="stylesheet" href="../static/css/untitled.css">
     </head>
 
     <body>
-        <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-cyan fixed-top portfolio-navbar" style = "/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e0f3fa+0,d8f0fc+38,b8e2f6+57,b6dffd+100 */
+            background: rgb(224,243,250); /* Old browsers */
+            background: -moz-linear-gradient(-45deg,  rgba(224,243,250,1) 0%, rgba(216,240,252,1) 38%, rgba(184,226,246,1) 57%, rgba(182,223,253,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 38%,rgba(184,226,246,1) 57%,rgba(182,223,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 38%,rgba(184,226,246,1) 57%,rgba(182,223,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            ">
             <div class="container"><a class="navbar-brand text-dark logo" href="/">Logan Stone</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item" role="presentation"><a class="nav-link text-dark active" href="/">Home</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active text-dark" href="/projects">Projects</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="/resume">CV</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="/resume">Resume</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active text-dark" href="mailto:logan.stone20@gmail.com">Contact Me</a></li>
                         </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
         {% block content %}
         {% endblock %}
         <footer class="page-footer">
             <div class="container">
-                <div class="links"><a href="/" style="filter: blur(0px) brightness(0%);margin: 0px 10px;">About me</a><a href="mailto:logan.stone20@gmail.com">Contact me</a><a href="/projects">Projects</a></div>
+                <div class="links">
+                    <a href="/" style="filter: blur(0px) brightness(0%);margin: 0px 10px;">About me</a>
+                    <a href="mailto:logan.stone20@gmail.com">Contact me</a>
+                    <a href="/projects">Projects</a></div>
                 <div class="social-icons">
                     <a class="shadow-sm" data-bs-hover-animate="rubberBand" href="https://github.com/logan-stone20" target="_blank" style="background-color: #000000;">
                         <i class="icon ion-social-github"></i>

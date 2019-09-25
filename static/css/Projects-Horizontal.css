@@ -63,11 +63,3 @@
   margin-bottom: 0;
 }
 
-.navbar.navbar-dark.navbar-expand-lg.fixed-top.bg-white.portfolio-navbar.gradient {
-  Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+22,066dab+90 */background: #c5deea;
-  /* Old browsers */background: -moz-linear-gradient(-45deg,  #c5deea 0%, #8abbd7 22%, #066dab 90%);
-  /* FF3.6-15 */background: -webkit-linear-gradient(-45deg,  #c5deea 0%,#8abbd7 22%,#066dab 90%);
-  /* Chrome10-25,Safari5.1-6 */background: linear-gradient(135deg,  #c5deea 0%,#8abbd7 22%,#066dab 90%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=1 );
-}
-
