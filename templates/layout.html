@@ -26,13 +26,17 @@
             background: linear-gradient(135deg,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 38%,rgba(184,226,246,1) 57%,rgba(182,223,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
             ">
-            <div class="container"><a class="navbar-brand text-dark logo" href="/">Logan Stone</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container">
+                <a class="navbar-brand text-dark logo" href="/">Logan Stone</a>
+                <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav">
+                <span class="icon ion-arrow-down-a"></span>
+            </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item" role="presentation"><a class="nav-link text-dark active" href="/">Home</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active text-dark" href="/projects">Projects</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="/resume">Resume</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active text-dark" href="mailto:logan.stone20@gmail.com">Contact Me</a></li>
+                        <ul class="navbar-nav">
+                            <li><a class="nav-link text-dark" href="/">Home</a></li>
+                            <li><a class="nav-link text-dark" href="/projects">Projects</a></li>
+                            <li><a class="nav-link text-dark" href="/resume">Resume</a></li>
+                            <li><a class="nav-link text-dark" href="mailto:ljs421@mun.ca">Contact Me</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,24 +46,37 @@
         <footer class="page-footer">
             <div class="container">
                 <div class="links">
-                    <a href="/" style="filter: blur(0px) brightness(0%);margin: 0px 10px;">About me</a>
-                    <a href="mailto:logan.stone20@gmail.com">Contact me</a>
-                    <a href="/projects">Projects</a></div>
+                    <a href="/">Home</a>
+                    <a href="mailto:ljs421@mun.ca">Contact me</a>
+                    <a href="/projects">Projects</a>
+                </div>
                 <div class="social-icons">
-                    <a class="shadow-sm" data-bs-hover-animate="rubberBand" href="https://github.com/logan-stone20" target="_blank" style="background-color: #000000;">
+                    <a href="https://github.com/logan-stone20" target="_blank" style="background-color: #000000;">
                         <i class="icon ion-social-github"></i>
                     </a>
-                    <a data-bs-hover-animate="rubberBand" href="https://www.linkedin.com/in/logan-stone-269339183/"
+                    <a href="https://www.linkedin.com/in/logan-stone-269339183/"
                             target="_blank" style="background-color: #0077B5;">
                         <i class="icon ion-social-linkedin"></i></a>
                     </div>
                 </div>
-                </footer>
+        </footer>
             <script src="../static/js/jquery.min.js"></script>
             <script src="../static/bootstrap/js/bootstrap.min.js"></script>
             <script src="../static/js/bs-animation.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-            <script src="../static/js/theme.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $(".icon").click(function () {
+                        if ($(this).hasClass("ion-arrow-down-a")) {
+                            $(this).removeClass("ion-arrow-down-a");
+                            $(this).addClass("ion-arrow-up-a");
+                        } else {
+                            $(this).removeClass("ion-arrow-up-a");
+                            $(this).addClass("ion-arrow-down-a");
+                        }
+                    });
+                });
+            </script>
+
     </body>
 </html>
